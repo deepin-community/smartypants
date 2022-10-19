@@ -1,0 +1,46 @@
+smartypants (2.0.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Deprecating priority extra as per policy 4.0.1
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+  * Drop Python 2 support.
+
+ -- Ondřej Nový <onovy@debian.org>  Sat, 24 Aug 2019 23:04:50 +0200
+
+smartypants (2.0.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Andrew Starr-Bochicchio ]
+  * New upstream release.
+  * Bump debian/compat to 9.
+  * Bump Standards-Version to 4.0.0, no changes.
+  * Update URLs in debian/copyright
+
+ -- Andrew Starr-Bochicchio <asb@debian.org>  Sun, 02 Jul 2017 20:01:39 -0400
+
+smartypants (1.8.6-1) unstable; urgency=medium
+
+  * Move package to DPMT and add myself as an uploader.
+  * New upstream release (Closes: #753949).
+  * Build Python3 package.
+  * Bump Standards-Version to 3.9.5.
+
+ -- Andrew Starr-Bochicchio <asb@debian.org>  Mon, 25 Aug 2014 13:43:26 -0700
+
+smartypants (1.6.0.3-2) unstable; urgency=low
+
+  * Change binary name to python-smartypants
+  * Fix architecture to all
+
+ -- Julien Danjou <acid@debian.org>  Fri, 09 Dec 2011 15:38:09 +0100
+
+smartypants (1.6.0.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #649736)
+
+ -- Julien Danjou <acid@debian.org>  Thu, 24 Nov 2011 11:46:49 +0100

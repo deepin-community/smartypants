@@ -1,0 +1,39 @@
+Source: smartypants
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Julien Danjou <acid@debian.org>,
+           Andrew Starr-Bochicchio <asb@debian.org>
+Build-Depends: debhelper (>= 9.0.0),
+               dh-python,
+               python3-all,
+               python3-setuptools
+Standards-Version: 4.0.0
+Homepage: http://web.chad.org/projects/smartypants.py/
+Vcs-Browser: https://salsa.debian.org/python-team/modules/smartypants
+Vcs-Git: https://salsa.debian.org/python-team/modules/smartypants.git
+
+Package: python3-smartypants
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, ${shlibs:Depends}
+Replaces: python-smartypants (<< 2.0.0-2)
+Breaks: python-smartypants (<< 2.0.0-2)
+Description: smart-quotes plugin for pyblosxom (Python 3 version)
+ It can perform the following transformations:
+ .
+  * Straight quotes ( " and ' ) into "curly" quote HTML entities
+  * Backticks-style quotes (``like this'') into "curly" quote HTML entities
+  * Dashes (-- and ---) into en- and em-dash entities
+  * Three consecutive dots (... or . . .) into an ellipsis entity
+ .
+ This means you can write, edit, and save your posts using plain old ASCII
+ straight quotes, plain dashes, and plain dots, but your published posts
+ (and final HTML output) will appear with smart quotes, em-dashes, and
+ proper ellipses.
+ .
+ SmartyPants does not modify characters within <pre>, <code>, <kbd>, <math>
+ or <script> tag blocks. Typically, these tags are used to display text
+ where smart quotes and other "smart punctuation" would not be appropriate,
+ such as source code or example markup.
+ .
+ This is the Python 3 version of the package.
